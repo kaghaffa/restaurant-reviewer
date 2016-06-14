@@ -1,0 +1,11 @@
+development:
+  adapter: postgresql
+  database: restaurant-reviewer
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  database: restaurant-reviewer-test
+  pool: 5
+  timeout: 5000
