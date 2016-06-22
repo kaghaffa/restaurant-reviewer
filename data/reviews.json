@@ -1,0 +1,23 @@
+[
+  {
+    "restaurant_token": "abc000",
+    "name": "Kayvon Ghaffari",
+    "date": "2016-01-01 02:00:00 UTC",
+    "stars": 5,
+    "comments": "it was great"
+  },
+  {
+    "restaurant_token": "abc000",
+    "name": "Bob Smith",
+    "date": "2016-01-03 02:00:00 UTC",
+    "stars": 4,
+    "comments": "pretty good"
+  },
+  {
+    "restaurant_token": "abc001",
+    "name": "Bob Smith",
+    "date": "2016-01-04 02:00:00 UTC",
+    "stars": 3.5,
+    "comments": "pretty good"
+  }
+]

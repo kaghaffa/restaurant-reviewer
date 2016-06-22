@@ -5,16 +5,14 @@ define([
 ], function(React, ReactRouter, Header) {
 	'use strict';
 
-  var RouteHandler = ReactRouter.RouteHandler;
-
 	return React.createClass({
 
 		render: function() {
 			return (
-				<div>
+				<div className="container-fluid">
 					<Header />
 					<div id="main-wrapper">
-						<RouteHandler { ...this.props } />
+						{ this.props.children }
 					</div>
 				</div>
 			);

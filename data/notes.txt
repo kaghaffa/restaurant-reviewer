@@ -1,0 +1,32 @@
+########################
+# UI
+########################
+* Header *
+
+* Menu *
+Filter restaurants
+
+* Restaurant *
+Current review displayed
+Form to submit review
+
+
+
+########################
+# DATA
+########################
+
+* RESTAURANTS *
+token
+name
+photograph
+address
+operating hours
+
+* REVIEWS *
+token
+restaurant_token
+name
+date
+stars (out of 5)
+comments

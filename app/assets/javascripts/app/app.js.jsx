@@ -1,23 +1,26 @@
 require([
 	'react',
+  'react-dom',
 	'react-router-shim',
 	'react-router',
-  'app/components/AppWrapper'
-], function(React, ReactRouterShim, ReactRouter, AppWrapper) {
+  'app/components/AppWrapper',
+  'app/components/RestaurantsList/RestaurantsListWrapper'
+], function(React, ReactDOM, ReactRouterShim, ReactRouter, AppWrapper,
+    RestaurantsListWrapper) {
 	'use strict';
 
   var Route           = ReactRouter.Route;
-  var HistoryLocation = ReactRouter.HistoryLocation;
-  var DefaultRoute    = ReactRouter.DefaultRoute;
+  var Router          = ReactRouter.Router;
+  var IndexRoute      = ReactRouter.IndexRoute;
 
   var routes = (
-  	<Route name="app" path="/" handler={ AppWrapper }>
-
+  	<Route path="/" component={ AppWrapper }>
+      <IndexRoute component={ RestaurantsListWrapper } />
     </Route>
   );
 
-  ReactRouter.run(routes, HistoryLocation, function(Handler, state) {
-    var params = state.params;
-  	React.render(<Handler params={ params } />, document.body);
-  });
+  ReactDOM.render(
+    <Router routes={ routes } history={ ReactRouter.hashHistory } />,
+    document.getElementById('main')
+  );
 });

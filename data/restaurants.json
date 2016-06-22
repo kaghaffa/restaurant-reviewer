@@ -1,0 +1,227 @@
+[
+  {
+    "token": "abc000",
+    "name":"The City Fish",
+    "photograph_url":"http://s3-media1.fl.yelpcdn.com/bphoto/O6YyMXEjF3dwqU-LdJOxCw/o.jpg",
+    "address":"21678 Stevens Creek Blvd, Cupertino, CA 95014",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc001",
+    "name":"Voolia",
+    "photograph_url":"http://dummyimage.com/216x239.png/ff4444/ffffff",
+    "address":"14 Surrey Circle",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc002",
+    "name":"Realfire",
+    "photograph_url":"http://dummyimage.com/185x195.png/5fa2dd/ffffff",
+    "address":"5 5th Pass",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc003",
+    "name":"Yozio",
+    "photograph_url":"http://dummyimage.com/197x191.png/dddddd/000000",
+    "address":"5 Sloan Crossing",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc004",
+    "name":"Babbleopia",
+    "photograph_url":"http://dummyimage.com/127x246.png/5fa2dd/ffffff",
+    "address":"2 Lake View Crossing",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc005",
+    "name":"Realmix",
+    "photograph_url":"http://dummyimage.com/169x227.png/ff4444/ffffff",
+    "address":"6265 Vermont Center",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc006",
+    "name":"Realcube",
+    "photograph_url":"http://dummyimage.com/128x120.png/dddddd/000000",
+    "address":"1336 Charing Cross Terrace",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc007",
+    "name":"Demimbu",
+    "photograph_url":"http://dummyimage.com/231x217.png/ff4444/ffffff",
+    "address":"5059 Union Trail",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc008",
+    "name":"Thoughtblab",
+    "photograph_url":"http://dummyimage.com/152x154.png/5fa2dd/ffffff",
+    "address":"36620 Grim Trail",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc009",
+    "name":"Avavee",
+    "photograph_url":"http://dummyimage.com/184x210.png/dddddd/000000",
+    "address":"2 Comanche Pass",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc010",
+    "name":"Jamia",
+    "photograph_url":"http://dummyimage.com/163x110.png/5fa2dd/ffffff",
+    "address":"20606 Butterfield Place",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc011",
+    "name":"Meejo",
+    "photograph_url":"http://dummyimage.com/199x208.png/ff4444/ffffff",
+    "address":"183 Blue Bill Park Avenue",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc012",
+    "name":"Topicblab",
+    "photograph_url":"http://dummyimage.com/156x132.png/ff4444/ffffff",
+    "address":"67576 Haas Way",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc013",
+    "name":"Trilith",
+    "photograph_url":"http://dummyimage.com/108x238.png/dddddd/000000",
+    "address":"5766 Roxbury Terrace",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  },
+  {
+    "token": "abc014",
+    "name":"Meezzy",
+    "photograph_url":"http://dummyimage.com/101x145.png/ff4444/ffffff",
+    "address":"980 Doe Crossing Avenue",
+    "operating_hours":[
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"],
+      ["9:00 am", "10:00 pm"]
+    ]
+  }
+]

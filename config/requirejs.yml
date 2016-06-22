@@ -1,6 +1,7 @@
 paths:
   'react'             : 'react/react-with-addons'
-  'react-router'      : 'react-router/build/global/ReactRouter.min'
+  'react-dom'         : 'react/react-dom'
+  'react-router'      : 'react-router/index'
   'react-router-shim' : 'react-router-shim/react-router-shim'
   'jquery'            : 'jquery/dist/jquery'
   'lodash'            : 'lodash/lodash'
