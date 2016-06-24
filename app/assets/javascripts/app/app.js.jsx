@@ -9,9 +9,9 @@ require([
     RestaurantsListWrapper) {
 	'use strict';
 
-  var Route           = ReactRouter.Route;
-  var Router          = ReactRouter.Router;
-  var IndexRoute      = ReactRouter.IndexRoute;
+  var Route      = ReactRouter.Route;
+  var Router     = ReactRouter.Router;
+  var IndexRoute = ReactRouter.IndexRoute;
 
   var routes = (
   	<Route path="/" component={ AppWrapper }>

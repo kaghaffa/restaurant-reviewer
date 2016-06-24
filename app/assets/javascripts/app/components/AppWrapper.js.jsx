@@ -9,7 +9,7 @@ define([
 
 		render: function() {
 			return (
-				<div className="container-fluid">
+				<div className="app-wrapper">
 					<Header />
 					<div id="main-wrapper">
 						{ this.props.children }
