@@ -5,5 +5,6 @@ module API::V1::Entities
     expose :photograph_url
     expose :address
     expose :operating_hours
+    expose :price
   end
 end
