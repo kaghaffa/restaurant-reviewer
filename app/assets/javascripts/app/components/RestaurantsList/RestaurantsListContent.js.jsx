@@ -1,7 +1,8 @@
 define([
   'react',
+  'app/components/RestaurantsList/RestaurantsListFilters',
   'app/components/RestaurantsList/RestaurantRow'
-], function(React, RestaurantRow) {
+], function(React, RestaurantsListFilters, RestaurantRow) {
   'use strict';
 
   return React.createClass({
@@ -18,8 +19,10 @@ define([
       console.log(restaurantRows)
       return (
         <div className="restaurants-list-content">
-
-          { restaurantRows }
+          <RestaurantsListFilters />
+          <div className="restaurants-list container">
+            { restaurantRows }
+          </div>
         </div>
       );
     }

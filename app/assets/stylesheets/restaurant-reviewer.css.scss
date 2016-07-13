@@ -1,0 +1,28 @@
+.restaurants-list-wrapper {
+  .restaurants-list-content {
+    .restaurant-row {
+      margin-bottom: 25px;
+
+      .restaurant-image {
+        // text-align: center;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .restaurant-info {
+        .price {
+          color: #ADB1B3;
+          letter-spacing: 2px;
+
+          i {
+            font-style: normal;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

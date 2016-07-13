@@ -6,5 +6,7 @@ module API::V1::Entities
     expose :address
     expose :operating_hours
     expose :price
+    expose :stars
+    expose :num_reviews
   end
 end
