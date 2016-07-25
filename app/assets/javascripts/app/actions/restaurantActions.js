@@ -41,7 +41,7 @@ define([
     },
 
     getRestaurant: function(restaurantToken) {
-      var requestUrl = "/api/v1/restuarants/" + restaurantToken;
+      var requestUrl = "/api/v1/restaurants/" + restaurantToken;
 
       fetch(requestUrl).then(function(response) {
         if (response.status >= 200 && response.status < 300) {
@@ -68,19 +68,19 @@ define([
     },
 
     getReviewsFor: function(restaurantToken) {
-      var requestUrl = "/api/v1/restuarants/" + restaurantToken + "/reviews";
+      var requestUrl = "/api/v1/restaurants/" + restaurantToken + "/reviews";
 
       fetch(requestUrl).then(function(response) {
         if (response.status >= 200 && response.status < 300) {
           response.json().then(function(res) {
             Dispatcher.handleServerAction({
-              type: RestaurantConstants.GET_RESTAURANT_SUCCESS,
+              type: RestaurantConstants.GET_REVIEWS_SUCCESS,
               response: res
             });
           });
         } else {
           Dispatcher.handleServerAction({
-            type: RestaurantConstants.GET_RESTAURANT_FAILURE
+            type: RestaurantConstants.GET_REVIEWS_FAILURE
           })
         }
       })
@@ -88,7 +88,7 @@ define([
         console.log("request failed", error);
 
         Dispatcher.handleServerAction({
-          type: RestaurantConstants.GET_RESTAURANT_FAILURE,
+          type: RestaurantConstants.GET_REVIEWS_FAILURE,
           response: error
         });
       });
