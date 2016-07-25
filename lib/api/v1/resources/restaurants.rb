@@ -19,6 +19,16 @@ module API::V1::Resources
           end
         end
 
+        def restaurants_with(filters = {})
+          restaurants.select do |r|
+            if filters[:price] && !filters[:price].empty?
+              next unless filters[:price].include?(r[:price].to_s)
+            end
+
+            true
+          end
+        end
+
         def reviews
           @__reviews ||= JSON.parse(File.read('data/reviews.json'),
             symbolize_names: true)
@@ -31,14 +41,22 @@ module API::V1::Resources
 
       # GET /v1/restaurants
       params do
+        optional :price, type: String
       end
       get do
-        present restaurants, with: API::V1::Entities::Restaurant
+        filters = {}
+        if params[:price]
+          filters[:price] = params[:price].split(',')
+        end
+
+        present restaurants_with(filters), with: API::V1::Entities::Restaurant
       end
 
       namespace ':token' do
+        # GET /v1/restaurants/:token
         get do
           rest = restaurants.select { |r| r[:token] == params[:token] }.first
+          rest[:reviews] = reviews_of(rest[:token])
           present rest, with: API::V1::Entities::Restaurant
         end # get
 
