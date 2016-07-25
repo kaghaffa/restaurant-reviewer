@@ -1,38 +1,121 @@
 define([
   'react',
+  'react-router',
   'lodash',
-  'app/actions/restaurantActions'
-], function(React, _, RestaurantActions) {
+  'app/actions/restaurantActions',
+  'app/utils/requestUtils'
+], function(React, ReactRouter, _, RestaurantActions, RequestUtils) {
   'use strict';
+
+  var BrowserHistory = ReactRouter.browserHistory;
+  var WithRouter = ReactRouter.withRouter;
 
   return React.createClass({
 
     getInitialState: function() {
       return {
-        filters: {},
-        prvFilters: {}
+        filters: {
+          price: []
+        }
       };
     },
 
-    _onFiltersChange: function() {
-      if (!_isEmpty(this.state.filters) && this._filtersChanged) {
-        this.setState({
-          prvFilters: this.state.filters
-        }, function() {
-          RestaurantActions.getRestaurants(this.statefilters)
-        });
-      }
+    componentDidMount: function() {
+      $.material.checkbox();
     },
 
-    _filtersChanged: function() {
-      this.state.filters !== this.state.prvFilters
+    componentWillReceiveProps: function(nextProps) {
+
+      console.log("will receive props: ", nextProps.location)
+    },
+
+    _onFilterChange: function(filter, e) {
+      var nextFiltersState = _.cloneDeep(this.state.filters);
+      nextFiltersState[filter] = e.target.value;
+
+      this.setState({
+        filters: nextFiltersState
+      }, function () {
+
+        // BrowserHistory.push({
+        //   pathName: '/',
+        //   query: nextFiltersState,
+        //   state: nextFiltersState
+        // });
+      });
+    },
+
+    _onPriceChange: function(e) {
+      var priceValue = e.target.value;
+      var priceState = this.state.filters.price;
+
+      if (priceState.includes(priceValue)) {
+        priceState.splice(priceState.indexOf(priceValue), 1);
+      } else {
+        priceState.push(priceValue);
+      }
+
+      this.setState({
+        filters: {
+          price: priceState.sort()
+        }
+      }, function () {
+        this._getRestaurants();
+      });
+    },
+
+    _getRestaurants: function() {
+      RestaurantActions.getRestaurants(this.state.filters);
     },
 
     render: function() {
+      this.props.location
       return (
         <div className="restaurants-list-filters">
           Filters
-
+          <div className="row">
+            <div className="restaurant-filter col-md-4">
+              <fieldset>
+                <legend>Select your Price:</legend>
+                <div className="checkbox">
+                  <label>
+                    <input type="checkbox"
+                           name="price"
+                           value="1"
+                           checked={ this.state.filters.price.includes("1") }
+                           onClick={ this._onPriceChange } />$
+                  </label>
+                </div>
+                <div className="checkbox">
+                  <label>
+                    <input type="checkbox"
+                           name="price"
+                           value="2"
+                           checked={ this.state.filters.price.includes("2") }
+                           onClick={ this._onPriceChange } />$$
+                  </label>
+                </div>
+                <div className="checkbox">
+                  <label>
+                    <input type="checkbox"
+                           name="price"
+                           value="3"
+                           checked={ this.state.filters.price.includes("3") }
+                           onClick={ this._onPriceChange } />$$$
+                  </label>
+                </div>
+                <div className="checkbox">
+                  <label>
+                    <input type="checkbox"
+                           name="price"
+                           value="4"
+                           checked={ this.state.filters.price.includes("4") }
+                           onClick={ this._onPriceChange } />$$$$
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
         </div>
       );
     }

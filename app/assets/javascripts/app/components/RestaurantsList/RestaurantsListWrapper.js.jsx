@@ -17,8 +17,8 @@ define([
     },
 
     componentDidMount: function() {
-      RestaurantActions.getRestaurants();
       RestaurantStore.addChangeListener(this._onRestaurantStoreChange);
+      RestaurantActions.getRestaurants();
     },
 
     componentWillUnmount: function() {

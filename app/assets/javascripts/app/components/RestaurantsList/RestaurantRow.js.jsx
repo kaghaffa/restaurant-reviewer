@@ -1,8 +1,11 @@
 define([
   'react',
+  'react-router',
   'lodash'
-], function(React, _) {
+], function(React, ReactRouter, _) {
   'use strict';
+
+  var BrowserHistory = ReactRouter.browserHistory;
 
   return React.createClass({
     propTypes: {
@@ -31,14 +34,26 @@ define([
       return priceHtml;
     },
 
+    _onRestaurantKeypress: function(e) {
+      if (e.charCode == 13) {
+        this._navigateToRestaurant()
+      }
+    },
+
+    _navigateToRestaurant: function() {
+      BrowserHistory.push('restaurants/' + this.props.restaurant.token)
+    },
+
     render: function() {
       var imageAltText = "Photograph of " + this.props.restaurant.name;
 
       return (
-        <div className="row restaurant-row" tabindex="0">
+        <div onKeyPress={ this._onRestaurantKeypress }
+             onClick={ this._navigateToRestaurant }
+             className="row restaurant-row" tabIndex="0">
           <div className="restaurant-image col-md-3">
             <img src={ this.props.restaurant.photograph_url }
-              alt={ imageAltText } />
+              alt={ imageAltText } className="img-circle" />
           </div>
           <div className="restaurant-info col-md-9">
             <b>{ this.props.restaurant.name }</b>

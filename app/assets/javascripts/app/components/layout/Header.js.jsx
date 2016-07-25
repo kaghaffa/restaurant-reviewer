@@ -1,7 +1,10 @@
 define([
-  'react'
-], function(React) {
+  'react',
+  'react-router'
+], function(React, ReactRouter) {
   'use strict';
+
+  var Link = ReactRouter.Link;
 
   return React.createClass({
 
@@ -11,7 +14,7 @@ define([
           <nav className="navbar navbar-default navbar-static-top">
             <div className="container">
               <div className="navbar-header">
-                <a className="navbar-brand" href="#">Test</a>
+                <Link className="navbar-brand" to="/">Test</Link>
               </div>
             </div>
           </nav>

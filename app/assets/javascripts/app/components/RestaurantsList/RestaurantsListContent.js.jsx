@@ -15,8 +15,6 @@ define([
         return <RestaurantRow key={ i } restaurant={ restaurant } />
       });
 
-
-      console.log(restaurantRows)
       return (
         <div className="restaurants-list-content">
           <RestaurantsListFilters />
