@@ -11,6 +11,10 @@ paths:
   'object-assign'     : 'object-assign/object-assign'
   'async'             : 'requirejs-plugins/src/async'
   'moment'            : 'moment/min/moment-with-locales.min'
+  'bootstrap'         : 'bootstrap/bootstrap.min'
+  'material'          : 'material-kit/material.min'
+  'material-kit'      : 'material-kit/material-kit'
+  'jquery'            : 'jquery/jquery.min'
 
 shim:
   'react-router-shim':
@@ -18,6 +22,13 @@ shim:
   'react-router':
     deps: ['react-router-shim']
     exports: 'ReactRouter'
+  'material-kit':
+    deps: ['jquery', 'material', 'bootstrap']
+  'material':
+    deps: ['jquery', 'bootstrap']
+  'bootstrap':
+    deps: ['jquery']
+    exports: 'jquery'
   'lodash':
     exports: '_'
   'object-assign':
