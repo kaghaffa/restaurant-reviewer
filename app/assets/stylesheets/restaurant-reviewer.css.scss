@@ -1,7 +1,23 @@
 .restaurants-list-wrapper {
   .restaurants-list-content {
+    .restaurants-list-filters {
+      height: 200px;
+      // background: white;
+
+      .restaurant-filter {
+
+        .checkbox {
+          display: inline;
+        }
+      }
+    }
+
     .restaurant-row {
       margin-bottom: 25px;
+
+      &:focus {
+        background: white;
+      }
 
       .restaurant-image {
         // text-align: center;
@@ -26,3 +42,10 @@
     }
   }
 }
+
+// <div class="checkbox">
+//   <label>
+//     <input type="checkbox" name="optionsCheckboxes">
+//     Unchecked
+//   </label>
+// </div>
