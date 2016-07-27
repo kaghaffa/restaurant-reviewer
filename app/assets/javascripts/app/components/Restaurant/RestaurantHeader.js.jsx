@@ -20,7 +20,7 @@ define([
         </div>
       );
 
-      const days = ["Mon", "Tue", "Wed", "Thurs", "Fri", "Sat", "Sun"];
+      const days = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Fri", "Sat"];
       var hoursDiv = this.props.restaurant.hours.map(function(hour, i, list) {
         return <div className="hour">{ days[i] } { hour }</div>
       });

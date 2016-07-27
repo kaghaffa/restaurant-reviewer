@@ -25,6 +25,13 @@ module API::V1::Resources
               next unless filters[:price].include?(r[:price].to_s)
             end
 
+            if filters[:open_now]
+              hours_for_today = r[:operating_hours][Date.today.wday]
+              start = hours_for_today[0] + ' PDT'
+              stop = hours_for_today[1] + ' PDT'
+              next unless start < filters[:open_now] && filters[:open_now] < stop
+            end
+
             true
           end
         end
@@ -41,13 +48,16 @@ module API::V1::Resources
 
       # GET /v1/restaurants
       params do
-        optional :price, type: String
+        optional :price,    type: String
+        optional :open_now, type: String
       end
       get do
         filters = {}
-        if params[:price]
-          filters[:price] = params[:price].split(',')
+        filters[:price] = params[:price].split(',') if params[:price]
+        if params[:open_now]
+          filters[:open_now] = DateTime.parse(params[:open_now])
         end
+
 
         present restaurants_with(filters), with: API::V1::Entities::Restaurant
       end

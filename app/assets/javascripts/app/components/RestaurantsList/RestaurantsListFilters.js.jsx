@@ -15,7 +15,8 @@ define([
     getInitialState: function() {
       return {
         filters: {
-          price: []
+          price: [],
+          openNow: false
         }
       };
     },
@@ -29,19 +30,14 @@ define([
       console.log("will receive props: ", nextProps.location)
     },
 
-    _onFilterChange: function(filter, e) {
+    _onOpenNowChange: function(e) {
       var nextFiltersState = _.cloneDeep(this.state.filters);
-      nextFiltersState[filter] = e.target.value;
+      nextFiltersState.openNow = !nextFiltersState.openNow
 
       this.setState({
         filters: nextFiltersState
       }, function () {
-
-        // BrowserHistory.push({
-        //   pathName: '/',
-        //   query: nextFiltersState,
-        //   state: nextFiltersState
-        // });
+        this._getRestaurants();
       });
     },
 
@@ -65,7 +61,15 @@ define([
     },
 
     _getRestaurants: function() {
-      RestaurantActions.getRestaurants(this.state.filters);
+      var filters = {};
+      filters.price = this.state.filters.price;
+
+      if (this.state.filters.openNow) {
+        var currentTime = new Date();
+        filters.open_now = currentTime.toJSON();
+      }
+
+      RestaurantActions.getRestaurants(filters);
     },
 
     render: function() {
@@ -111,6 +115,19 @@ define([
                            value="4"
                            checked={ this.state.filters.price.includes("4") }
                            onClick={ this._onPriceChange } />$$$$
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div className="restaurant-filter col-md-4">
+              <fieldset>
+                <div className="checkbox">
+                  <label>
+                    <input type="checkbox"
+                           name="openNow"
+                           checked={ this.state.filters.openNow }
+                           onClick={ this._onOpenNowChange } />Open now
                   </label>
                 </div>
               </fieldset>
