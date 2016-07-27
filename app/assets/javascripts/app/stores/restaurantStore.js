@@ -18,6 +18,10 @@ define([
     _restaurants = restaurants
   }
 
+  function _prependReview(review) {
+    _restaurant.reviews.unshift(review);
+  }
+
   var RestaurantStore = _.extend({}, EventEmitter.prototype, {
     emitChange: function() {
       this.emit('change');
@@ -49,6 +53,10 @@ define([
           break;
         case RestaurantConstants.GET_RESTAURANT_SUCCESS:
           _setRestaurant(action.response);
+          RestaurantStore.emitChange();
+          break;
+        case RestaurantConstants.ADD_REVIEW_SUCCESS:
+          _prependReview(action.response);
           RestaurantStore.emitChange();
           break;
       }

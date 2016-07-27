@@ -4,7 +4,9 @@ module API::V1::Entities
     expose :name
     expose :photograph_url
     expose :address
-    expose :operating_hours
+    expose :hours do |r, _|
+      r[:operating_hours]
+    end
     expose :price
     expose :stars
     expose :num_reviews

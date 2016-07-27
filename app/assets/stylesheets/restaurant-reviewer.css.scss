@@ -19,15 +19,6 @@
         background: white;
       }
 
-      .restaurant-image {
-        // text-align: center;
-
-        img {
-          width: 100px;
-          height: 100px;
-        }
-      }
-
       .restaurant-info {
         .price {
           color: #ADB1B3;
@@ -43,9 +34,72 @@
   }
 }
 
+.restaurant-wrapper {
+  .restaurant-header {
+    height: 150px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    display: table;
+    text-align: left;
+
+    .restaurant-image {
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .restaurant-address {
+      display: table;
+
+      .icon, .address {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
+    .container-fluid {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+  }
+
+  .restaurant-content {
+  }
+}
+
+.restaurant-image {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.price {
+  span {
+    color: #ABABAB;
+    letter-spacing: 2px;
+    font-size: 16px;
+
+    b {
+      color: #333
+    }
+  }
+}
+
 // <div class="checkbox">
 //   <label>
 //     <input type="checkbox" name="optionsCheckboxes">
 //     Unchecked
 //   </label>
 // </div>
+
+@media (max-width: 991px){
+  .restaurant-wrapper {
+    .restaurant-header {
+      text-align: center;
+    }
+  }
+}

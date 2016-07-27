@@ -67,6 +67,13 @@ define([
       });
     },
 
+    addReview: function(restaurantToken, review) {
+      Dispatcher.handleServerAction({
+        type: RestaurantConstants.ADD_REVIEW_SUCCESS,
+        response: review
+      });
+    },
+
     getReviewsFor: function(restaurantToken) {
       var requestUrl = "/api/v1/restaurants/" + restaurantToken + "/reviews";
 

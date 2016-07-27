@@ -1,9 +1,12 @@
 define([
   'react',
+  'lodash',
   'app/actions/restaurantActions',
   'app/stores/restaurantStore',
-  'app/components/Restaurant/RestaurantContent'
-], function(React, RestaurantActions, RestaurantStore, RestaurantContent) {
+  'app/components/Restaurant/RestaurantContent',
+  'app/components/Restaurant/RestaurantHeader'
+], function(React, _, RestaurantActions, RestaurantStore, RestaurantContent,
+    RestaurantHeader) {
   'use strict';
 
   return React.createClass({
@@ -30,9 +33,13 @@ define([
     },
 
     render: function() {
+      if (_.isEmpty(this.state.restaurant)) {
+        return <div className="loading">Loading...</div>
+      }
 
       return (
         <div className="restaurant-wrapper">
+          <RestaurantHeader restaurant={ this.state.restaurant } />
           <RestaurantContent restaurant={ this.state.restaurant } />
         </div>
       );
