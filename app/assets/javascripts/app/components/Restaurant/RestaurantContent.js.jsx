@@ -17,7 +17,7 @@ define([
 
       return (
         <div className="restaurant-content">
-          <div className="container-fluid">
+          <div className="container">
             <div className="row">
               <AddReviewForm token={ this.props.restaurant.token } />
             </div>

@@ -1,8 +1,12 @@
+body {
+  background-color: #FFFFFF;
+}
+
+
 .restaurants-list-wrapper {
   .restaurants-list-content {
     .restaurants-list-filters {
       height: 200px;
-      // background: white;
 
       .restaurant-filter {
 
@@ -16,7 +20,7 @@
       margin-bottom: 25px;
 
       &:focus {
-        background: white;
+        background: #000000;
       }
 
       .restaurant-info {
@@ -63,10 +67,26 @@
       display: table-cell;
       vertical-align: middle;
     }
-
   }
 
-  .restaurant-content {
+  .restaurant-content {}
+
+  .review-form {
+    .stars {
+      .radio {
+        display: inline-block;
+      }
+    }
+
+    .material-icons {
+      &:focus {
+        color: #abc123;
+      }
+
+      &:hover {
+        color: red;
+      }
+    }
   }
 }
 
