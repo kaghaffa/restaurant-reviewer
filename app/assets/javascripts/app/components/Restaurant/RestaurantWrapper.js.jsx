@@ -34,7 +34,7 @@ define([
 
     render: function() {
       if (_.isEmpty(this.state.restaurant)) {
-        return <div className="loading">Loading...</div>
+        return <div className="loading"></div>
       }
 
       return (
