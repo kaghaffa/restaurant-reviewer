@@ -22,11 +22,10 @@ define([
     },
 
     componentDidMount: function() {
-      $.material.checkbox();
+      // $.material.checkbox();
     },
 
     componentWillReceiveProps: function(nextProps) {
-
       console.log("will receive props: ", nextProps.location)
     },
 
@@ -76,61 +75,63 @@ define([
       this.props.location
       return (
         <div className="restaurants-list-filters">
-          Filters
-          <div className="row">
-            <div className="restaurant-filter col-md-4">
-              <fieldset>
-                <legend>Select your Price:</legend>
-                <div className="checkbox">
-                  <label>
-                    <input type="checkbox"
-                           name="price"
-                           value="1"
-                           checked={ this.state.filters.price.includes("1") }
-                           onClick={ this._onPriceChange } />$
-                  </label>
+          <div className="container">
+            <div className="row">
+              <div className="filters">
+                <div className="restaurant-filter col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-0">
+                  <fieldset>
+                    <div className="checkbox">
+                      <label>
+                        <input type="checkbox"
+                               name="price"
+                               value="1"
+                               checked={ this.state.filters.price.includes("1") }
+                               onClick={ this._onPriceChange } />$
+                      </label>
+                    </div>
+                    <div className="checkbox">
+                      <label>
+                        <input type="checkbox"
+                               name="price"
+                               value="2"
+                               checked={ this.state.filters.price.includes("2") }
+                               onClick={ this._onPriceChange } />$$
+                      </label>
+                    </div>
+                    <div className="checkbox">
+                      <label>
+                        <input type="checkbox"
+                               name="price"
+                               value="3"
+                               checked={ this.state.filters.price.includes("3") }
+                               onClick={ this._onPriceChange } />$$$
+                      </label>
+                    </div>
+                    <div className="checkbox">
+                      <label>
+                        <input type="checkbox"
+                               name="price"
+                               value="4"
+                               checked={ this.state.filters.price.includes("4") }
+                               onClick={ this._onPriceChange } />$$$$
+                      </label>
+                    </div>
+                  </fieldset>
                 </div>
-                <div className="checkbox">
-                  <label>
-                    <input type="checkbox"
-                           name="price"
-                           value="2"
-                           checked={ this.state.filters.price.includes("2") }
-                           onClick={ this._onPriceChange } />$$
-                  </label>
-                </div>
-                <div className="checkbox">
-                  <label>
-                    <input type="checkbox"
-                           name="price"
-                           value="3"
-                           checked={ this.state.filters.price.includes("3") }
-                           onClick={ this._onPriceChange } />$$$
-                  </label>
-                </div>
-                <div className="checkbox">
-                  <label>
-                    <input type="checkbox"
-                           name="price"
-                           value="4"
-                           checked={ this.state.filters.price.includes("4") }
-                           onClick={ this._onPriceChange } />$$$$
-                  </label>
-                </div>
-              </fieldset>
-            </div>
 
-            <div className="restaurant-filter col-md-4">
-              <fieldset>
-                <div className="checkbox">
-                  <label>
-                    <input type="checkbox"
-                           name="openNow"
-                           checked={ this.state.filters.openNow }
-                           onClick={ this._onOpenNowChange } />Open now
-                  </label>
+                <div className="restaurant-filter col-md-2 col-sm-6">
+                  <fieldset>
+                    <div className="checkbox">
+                      <label>
+                        <input type="checkbox"
+                               name="openNow"
+                               checked={ this.state.filters.openNow }
+                               onClick={ this._onOpenNowChange } />Open now
+                      </label>
+                    </div>
+                  </fieldset>
                 </div>
-              </fieldset>
+              </div>
             </div>
           </div>
         </div>

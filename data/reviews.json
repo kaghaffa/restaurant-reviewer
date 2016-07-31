@@ -4,14 +4,21 @@
     "name": "Kayvon Ghaffari",
     "date": "2016-01-01 02:00:00 UTC",
     "stars": 5,
-    "comments": "it was great"
+    "comments": "Every time we visit my childhood city of San Jose, we always make an effort to squeeze in time for a cup of Philz's Mint Mojito Iced Coffee, no matter how busy our schedule is. With around 35+ branches now, we have visited around seven locations so far, starting from:\n- the first store in Mission District on Folsom St.,\n- Van Ness Ave. with our friend during Pride Week\n- San Jose on Paseo de San Antonio Walk near SJSU\n- South San Francisco on Westborough Blvd.\n- Burlingame\n- Santa Monica\n- lets not forget the one inside the Facebook Headquarter (but it was closed when we arrived! doh...)\nI think we are unofficially trying to hit all 35 spots, the Philz Coffee in Cupertino would be our eighth spot! Probably not on my list of favorites, as I personally felt the Cupertino branch lacked a bit of energy and artistic personality compared to the other locations. Maybe because the baristas were not as enthusiastic as the others or maybe because I am just not use to walking into a Philz without the walls covered with modern art or some color. The atmosphere was just a bit lukewarm and bland for me. However, the quality and consistency is still preserved, they made one \"hecka\" mean Mint Mojito Iced Coffee with fresh mint leaves and frothy creamy consistency.  Philz Coffee is known for their \"one cup at a time\" philosophy, brewing all their drinks one cup at a time and creating a custom coffee blend to your preferences. Still our favorite coffee place! Just probably not as this particular location."
   },
   {
     "restaurant_token": "abc000",
     "name": "Bob Smith",
     "date": "2016-01-03 02:00:00 UTC",
     "stars": 4,
-    "comments": "pretty good"
+    "comments": "I've had lot of cakes, cookies, pies, and persimmon bread from the Indulgent Rose. I ordered cookies and individually wrapped persimmon bread last year to give to family and coworkers for the holidays. They were such a huge hit I'm ordering them again this year! Jamie is great to work with and get goods are so tasty. Order your holiday items before she gets booked up!"
+  },
+  {
+    "restaurant_token": "abc000",
+    "name": "Bob Smith",
+    "date": "2016-01-06 02:00:00 UTC",
+    "stars": 4,
+    "comments": "Jaime was wonderful.  My daughter wanted a dessert table, no cakes or cupcakes.  It was difficult to find someone that would make the desserts she wanted for her big day.  Jaime was willing to do what we asked and was so reasonable in her pricing!  It was such a pleasure to do business with her, and the desserts looked and tasted marvelous.  I would definitely recommend!  My daughter's wedding was June 25, 2016 and Jaime delivered the desserts in the morning so that we didn't have to worry about the traffic holding her up!"
   },
   {
     "restaurant_token": "abc001",
@@ -19,5 +26,12 @@
     "date": "2016-01-04 02:00:00 UTC",
     "stars": 3.5,
     "comments": "pretty good"
+  },
+  {
+    "restaurant_token": "abc003",
+    "name": "Bob Smith",
+    "date": "2016-01-08 02:00:00 UTC",
+    "stars": 1.5,
+    "comments": "worst experience ever"
   }
 ]

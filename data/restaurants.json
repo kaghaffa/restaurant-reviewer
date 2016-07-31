@@ -22,13 +22,13 @@
     "photograph_url":"http://dummyimage.com/216x239.png/ff4444/ffffff",
     "address":"14 Surrey Circle",
     "operating_hours":[
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"]
+      ["9:00 am", "8:00 pm"],
+      ["9:00 am", "8:00 pm"],
+      ["9:00 am", "8:00 pm"],
+      ["9:00 am", "8:00 pm"],
+      ["9:00 am", "8:00 pm"],
+      ["9:00 am", "8:00 pm"],
+      ["9:00 am", "8:00 pm"]
     ]
   },
   {
@@ -70,13 +70,13 @@
     "photograph_url":"http://dummyimage.com/127x246.png/5fa2dd/ffffff",
     "address":"2 Lake View Crossing",
     "operating_hours":[
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"],
-      ["9:00 am", "10:00 pm"]
+      ["9:00 am", "9:00 pm"],
+      ["9:00 am", "9:00 pm"],
+      ["9:00 am", "9:00 pm"],
+      ["9:00 am", "9:00 pm"],
+      ["9:00 am", "9:00 pm"],
+      ["9:00 am", "9:00 pm"],
+      ["9:00 am", "9:00 pm"]
     ]
   },
   {

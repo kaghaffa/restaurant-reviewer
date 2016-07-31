@@ -18,8 +18,14 @@ define([
       return (
         <div className="restaurants-list-content">
           <RestaurantsListFilters />
-          <div className="restaurants-list container">
-            { restaurantRows }
+          <div className="restaurants-list">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-8 col-md-offset-2">
+                  { restaurantRows }
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       );

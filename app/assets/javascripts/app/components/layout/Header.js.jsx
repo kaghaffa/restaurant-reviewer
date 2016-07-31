@@ -14,7 +14,7 @@ define([
           <nav className="navbar navbar-default navbar-static-top">
             <div className="container">
               <div className="navbar-header">
-                <Link className="navbar-brand" to="/">Test</Link>
+                <Link className="navbar-brand" to="/">Nomz</Link>
               </div>
             </div>
           </nav>

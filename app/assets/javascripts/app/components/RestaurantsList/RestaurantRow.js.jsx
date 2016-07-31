@@ -31,15 +31,15 @@ define([
         <div onKeyPress={ this._onRestaurantKeypress }
              onClick={ this._navigateToRestaurant }
              className="row restaurant-row" tabIndex="0">
-          <div className="restaurant-image col-md-3">
+          <div className="restaurant-image col-md-3 col-xs-6">
             <img src={ this.props.restaurant.photograph_url }
               alt={ imageAltText } className="img-circle" />
           </div>
-          <div className="restaurant-info col-md-9">
+          <div className="restaurant-info col-md-9 col-xs-6">
             <b>{ this.props.restaurant.name }</b>
             { Utils.priceIcons(this.props.restaurant.price) }
             <div className="stars">
-              Stars: { this.props.restaurant.stars }
+              <span>{ Utils.starIcons(this.props.restaurant.stars) }</span>
             </div>
             { this.props.restaurant.num_reviews } Reviews
           </div>

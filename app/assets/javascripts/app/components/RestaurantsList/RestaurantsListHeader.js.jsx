@@ -8,7 +8,10 @@ define([
     render: function() {
       return (
         <div className="restaurants-list-header">
-          Restaurants List Header
+          <div className="container">
+            <div className="row">
+            </div>
+          </div>
         </div>
       );
     }

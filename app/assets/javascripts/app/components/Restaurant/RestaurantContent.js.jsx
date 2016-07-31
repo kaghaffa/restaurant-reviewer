@@ -1,8 +1,9 @@
 define([
   'react',
   'app/components/Restaurant/AddReviewForm',
-  'app/components/Restaurant/ReviewEntry'
-], function(React, AddReviewForm, ReviewEntry) {
+  'app/components/Restaurant/ReviewEntry',
+  'app/components/Restaurant/GeneralRestaurantInfo'
+], function(React, AddReviewForm, ReviewEntry, GeneralRestaurantInfo) {
   'use strict';
 
   return React.createClass({
@@ -17,14 +18,21 @@ define([
 
       return (
         <div className="restaurant-content">
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
-              <AddReviewForm token={ this.props.restaurant.token } />
-            </div>
-          </div>
-          <div className="container">
-            <div className="review-list">
-              { reviewsList }
+              <div className="col-md-3 col-md-offset-1 col-sm-4">
+                <GeneralRestaurantInfo restaurant={ this.props.restaurant } />
+              </div>
+              <div className="col-md-7 col-sm-8">
+                <div className="row">
+                  <div className="col-md-12">
+                    <AddReviewForm token={ this.props.restaurant.token } />
+                  </div>
+                </div>
+                <div className="review-list">
+                  { reviewsList }
+                </div>
+              </div>
             </div>
           </div>
         </div>
