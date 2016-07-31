@@ -21,14 +21,6 @@ define([
       };
     },
 
-    componentDidMount: function() {
-      // $.material.checkbox();
-    },
-
-    componentWillReceiveProps: function(nextProps) {
-      console.log("will receive props: ", nextProps.location)
-    },
-
     _onOpenNowChange: function(e) {
       var nextFiltersState = _.cloneDeep(this.state.filters);
       nextFiltersState.openNow = !nextFiltersState.openNow

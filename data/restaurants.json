@@ -19,7 +19,7 @@
     "token": "abc001",
     "name":"Voolia",
     "price": 3,
-    "photograph_url":"http://dummyimage.com/216x239.png/ff4444/ffffff",
+    "photograph_url":"http://s3-media4.fl.yelpcdn.com/bphoto/MHyY0Pd6y36RE8iCy1Y-Og/o.jpg",
     "address":"14 Surrey Circle",
     "operating_hours":[
       ["9:00 am", "8:00 pm"],
@@ -35,7 +35,7 @@
     "token": "abc002",
     "name":"Realfire",
     "price": 2,
-    "photograph_url":"http://dummyimage.com/185x195.png/5fa2dd/ffffff",
+    "photograph_url":"http://s3-media4.fl.yelpcdn.com/bphoto/rcNciWKJgRyzvgwJ5EE29Q/o.jpg",
     "address":"5 5th Pass",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],
@@ -51,7 +51,7 @@
     "token": "abc003",
     "name":"Yozio",
     "price": 2,
-    "photograph_url":"http://dummyimage.com/197x191.png/dddddd/000000",
+    "photograph_url":"http://s3-media1.fl.yelpcdn.com/bphoto/uFzeA3SFLYoFjkou3IFi-w/o.jpg",
     "address":"5 Sloan Crossing",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],
@@ -67,7 +67,7 @@
     "token": "abc004",
     "name":"Babbleopia",
     "price": 2,
-    "photograph_url":"http://dummyimage.com/127x246.png/5fa2dd/ffffff",
+    "photograph_url":"http://s3-media4.fl.yelpcdn.com/bphoto/A5RgWmOkerLC2xTucCmFlQ/o.jpg",
     "address":"2 Lake View Crossing",
     "operating_hours":[
       ["9:00 am", "9:00 pm"],
@@ -83,7 +83,7 @@
     "token": "abc005",
     "name":"Realmix",
     "price": 1,
-    "photograph_url":"http://dummyimage.com/169x227.png/ff4444/ffffff",
+    "photograph_url":"http://s3-media1.fl.yelpcdn.com/bphoto/ZY542ygGDNW6_83AS95UEw/o.jpg",
     "address":"6265 Vermont Center",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],
@@ -99,7 +99,7 @@
     "token": "abc006",
     "name":"Realcube",
     "price": 4,
-    "photograph_url":"http://dummyimage.com/128x120.png/dddddd/000000",
+    "photograph_url":"http://s3-media2.fl.yelpcdn.com/bphoto/089eLwrN6yOwnF8a0c6fWA/o.jpg",
     "address":"1336 Charing Cross Terrace",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],
@@ -115,7 +115,7 @@
     "token": "abc007",
     "name":"Demimbu",
     "price": 2,
-    "photograph_url":"http://dummyimage.com/231x217.png/ff4444/ffffff",
+    "photograph_url":"http://s3-media1.fl.yelpcdn.com/bphoto/6nru0o6c7xRyWrPZxk7NpQ/o.jpg",
     "address":"5059 Union Trail",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],
@@ -131,7 +131,7 @@
     "token": "abc008",
     "name":"Thoughtblab",
     "price": 2,
-    "photograph_url":"http://dummyimage.com/152x154.png/5fa2dd/ffffff",
+    "photograph_url":"http://s3-media4.fl.yelpcdn.com/bphoto/wXDZjzrb-5hH--bkg6_M6g/o.jpg",
     "address":"36620 Grim Trail",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],
@@ -147,7 +147,7 @@
     "token": "abc009",
     "name":"Avavee",
     "price": 2,
-    "photograph_url":"http://dummyimage.com/184x210.png/dddddd/000000",
+    "photograph_url":"http://s3-media2.fl.yelpcdn.com/bphoto/VXK-rZYtHPwQLm1mBppbkQ/o.jpg",
     "address":"2 Comanche Pass",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],
@@ -163,7 +163,7 @@
     "token": "abc010",
     "name":"Jamia",
     "price": 3,
-    "photograph_url":"http://dummyimage.com/163x110.png/5fa2dd/ffffff",
+    "photograph_url":"http://s3-media2.fl.yelpcdn.com/bphoto/X-ehJtOPSGKBsK67LUJpCg/o.jpg",
     "address":"20606 Butterfield Place",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],
@@ -179,7 +179,7 @@
     "token": "abc011",
     "name":"Meejo",
     "price": 3,
-    "photograph_url":"http://dummyimage.com/199x208.png/ff4444/ffffff",
+    "photograph_url":"http://s3-media4.fl.yelpcdn.com/bphoto/cLIT2fuXo0rOcvuw5Jl5aQ/o.jpg",
     "address":"183 Blue Bill Park Avenue",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],
@@ -195,7 +195,7 @@
     "token": "abc012",
     "name":"Topicblab",
     "price": 2,
-    "photograph_url":"http://dummyimage.com/156x132.png/ff4444/ffffff",
+    "photograph_url":"http://s3-media1.fl.yelpcdn.com/bphoto/gZK8kpgv7xq7b9YfJpfSTA/o.jpg",
     "address":"67576 Haas Way",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],
@@ -211,7 +211,7 @@
     "token": "abc013",
     "name":"Trilith",
     "price": 2,
-    "photograph_url":"http://dummyimage.com/108x238.png/dddddd/000000",
+    "photograph_url":"http://s3-media2.fl.yelpcdn.com/bphoto/JvDEdPlCiT9ndMFUa8mP-g/o.jpg",
     "address":"5766 Roxbury Terrace",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],
@@ -227,7 +227,7 @@
     "token": "abc014",
     "name":"Meezzy",
     "price": 1,
-    "photograph_url":"http://dummyimage.com/101x145.png/ff4444/ffffff",
+    "photograph_url":"http://s3-media2.fl.yelpcdn.com/bphoto/NG_lsbVlHuydQrYFVGBUjA/o.jpg",
     "address":"980 Doe Crossing Avenue",
     "operating_hours":[
       ["9:00 am", "10:00 pm"],

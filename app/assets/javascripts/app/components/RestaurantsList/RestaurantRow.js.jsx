@@ -13,7 +13,6 @@ define([
       restaurant: React.PropTypes.object.isRequired
     },
 
-
     _onRestaurantKeypress: function(e) {
       if (e.charCode == 13) {
         this._navigateToRestaurant()

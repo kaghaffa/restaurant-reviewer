@@ -7,7 +7,6 @@ define([
   var Link = ReactRouter.Link;
 
   return React.createClass({
-
     render: function() {
       return (
         <div className="header">
