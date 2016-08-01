@@ -14,7 +14,7 @@ define([
       var roundedStars = Math.round(this.props.review.stars * 10) / 10;
 
       return (
-        <div className="review-entry">
+        <article className="review-entry">
           <div className="review-header">
             <div className="row">
               <div className="col-md-6 col-sm-6 col-xs-6">
@@ -48,7 +48,7 @@ define([
               <p>{ this.props.review.comments }</p>
             </div>
           </div>
-        </div>
+        </article>
       );
     }
   });
