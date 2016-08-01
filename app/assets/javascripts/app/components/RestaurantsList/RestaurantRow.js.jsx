@@ -25,6 +25,7 @@ define([
 
     render: function() {
       var imageAltText = "Photograph of " + this.props.restaurant.name;
+      var roundedStars = Math.round(this.props.restaurant.stars * 10) / 10;
 
       return (
         <div onKeyPress={ this._onRestaurantKeypress }
@@ -37,7 +38,7 @@ define([
           <div className="restaurant-info col-md-9 col-xs-6">
             <b>{ this.props.restaurant.name }</b>
             { Utils.priceIcons(this.props.restaurant.price) }
-            <div className="stars">
+            <div className="stars" aria-label={ roundedStars + " Stars" }>
               <span>{ Utils.starIcons(this.props.restaurant.stars) }</span>
             </div>
             { this.props.restaurant.num_reviews } Reviews

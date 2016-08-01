@@ -18,7 +18,7 @@ define([
       return (
         <div className="restaurants-list-content">
           <RestaurantsListFilters />
-          <div className="restaurants-list">
+          <main className="restaurants-list">
             <div className="container">
               <div className="row">
                 <div className="col-md-8 col-md-offset-2">
@@ -26,7 +26,7 @@ define([
                 </div>
               </div>
             </div>
-          </div>
+          </main>
         </div>
       );
     }

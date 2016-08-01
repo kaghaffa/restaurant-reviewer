@@ -12,6 +12,7 @@ define([
     render: function() {
       var imageAltText = "Photograph of " + this.props.restaurant.name;
       var splitAddress = this.props.restaurant.address.split(',');
+      var roundedStars = Math.round(this.props.restaurant.stars * 10) / 10;
 
       var addressDivs = (
         <div className="address">
@@ -39,7 +40,9 @@ define([
                       </div>
 
                       <div className="col-md-3 col-sm-6 col-xs-6">
-                        <span>{ Utils.starIcons(this.props.restaurant.stars) }</span>
+                        <div className="stars" aria-label={ roundedStars + " Stars" }>
+                          <span>{ Utils.starIcons(this.props.restaurant.stars) }</span>
+                        </div>
                       </div>
                       <div className="col-md-3 col-sm-6 col-xs-6">
                         { Utils.priceIcons(this.props.restaurant.price) }

@@ -9,7 +9,7 @@ define([
   return React.createClass({
     render: function() {
       return (
-        <div className="header">
+        <header className="header">
           <nav className="navbar navbar-default navbar-static-top">
             <div className="container">
               <div className="navbar-header">
@@ -17,7 +17,7 @@ define([
               </div>
             </div>
           </nav>
-        </div>
+        </header>
       );
     }
   });

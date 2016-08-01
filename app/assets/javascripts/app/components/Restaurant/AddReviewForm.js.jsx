@@ -86,6 +86,8 @@ define([
                       <label>
                         <input value="1"
                           type="radio"
+                          title="1 stars"
+                          aria-label="1 stars"
                           name="optionsRadios"
                           checked={ this.state.stars == "1" }
                           onChange={ this._onInputChange.bind(this, "stars") } />1
@@ -95,6 +97,8 @@ define([
                       <label>
                         <input value="2"
                           type="radio"
+                          title="2 stars"
+                          aria-label="2 stars"
                           name="optionsRadios"
                           checked={ this.state.stars == "2" }
                           onChange={ this._onInputChange.bind(this, "stars") } />2
@@ -104,6 +108,8 @@ define([
                       <label>
                         <input value="3"
                           type="radio"
+                          title="3 stars"
+                          aria-label="3 stars"
                           name="optionsRadios"
                           checked={ this.state.stars == "3" }
                           onChange={ this._onInputChange.bind(this, "stars") } />3
@@ -113,6 +119,8 @@ define([
                       <label>
                         <input value="4"
                           type="radio"
+                          title="4 stars"
+                          aria-label="4 stars"
                           name="optionsRadios"
                           checked={ this.state.stars == "4" }
                           onChange={ this._onInputChange.bind(this, "stars") } />4
@@ -122,6 +130,8 @@ define([
                       <label>
                         <input value="5"
                           type="radio"
+                          title="5 stars"
+                          aria-label="5 stars"
                           name="optionsRadios"
                           checked={ this.state.stars == "5" }
                           onChange={ this._onInputChange.bind(this, "stars") } />5

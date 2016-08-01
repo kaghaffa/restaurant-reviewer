@@ -23,7 +23,7 @@ define([
               <div className="col-md-3 col-md-offset-1 col-sm-4">
                 <GeneralRestaurantInfo restaurant={ this.props.restaurant } />
               </div>
-              <div className="col-md-7 col-sm-8">
+              <main className="col-md-7 col-sm-8">
                 <div className="row">
                   <div className="col-md-12">
                     <AddReviewForm token={ this.props.restaurant.token } />
@@ -32,7 +32,7 @@ define([
                 <div className="review-list">
                   { reviewsList }
                 </div>
-              </div>
+              </main>
             </div>
           </div>
         </div>

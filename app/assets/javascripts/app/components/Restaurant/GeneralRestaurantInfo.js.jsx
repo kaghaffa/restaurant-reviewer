@@ -22,12 +22,12 @@ define([
       });
 
       return (
-        <div className="general-restaurant-info well">
+        <aside className="general-restaurant-info well">
           <div className="hours">
             <h5><b>Hours</b></h5>
             { hoursDiv }
           </div>
-        </div>
+        </aside>
       );
     }
   });
