@@ -48,9 +48,9 @@ gem 'rack-cors'
 gem 'rack-ssl-enforcer'
 
 # front-end
-gem 'react-rails', '~> 1.7.1'
+gem 'react-rails', '~> 1.0.0'
 gem 'bower-rails', '~> 0.9.2'
-gem 'requirejs-rails'
+gem 'requirejs-rails', '~> 0.9.8'
 
 group :development, :test do
   gem 'database_cleaner'
