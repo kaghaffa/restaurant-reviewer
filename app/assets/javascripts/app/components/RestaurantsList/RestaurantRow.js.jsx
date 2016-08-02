@@ -28,7 +28,7 @@ define([
       var roundedStars = Math.round(this.props.restaurant.stars * 10) / 10;
 
       return (
-        <div onKeyPress={ this._onRestaurantKeypress }
+        <article onKeyPress={ this._onRestaurantKeypress }
              onClick={ this._navigateToRestaurant }
              className="row restaurant-row" tabIndex="0">
           <div className="restaurant-image col-md-3 col-xs-6">
@@ -36,14 +36,14 @@ define([
               alt={ imageAltText } className="img-circle" />
           </div>
           <div className="restaurant-info col-md-9 col-xs-6">
-            <b>{ this.props.restaurant.name }</b>
+            <h4>{ this.props.restaurant.name }</h4>
             { Utils.priceIcons(this.props.restaurant.price) }
             <div className="stars" aria-label={ roundedStars + " Stars" }>
               <span>{ Utils.starIcons(this.props.restaurant.stars) }</span>
             </div>
             { this.props.restaurant.num_reviews } Reviews
           </div>
-        </div>
+        </article>
       );
     }
   });

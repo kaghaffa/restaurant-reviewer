@@ -40,7 +40,7 @@ define([], function() {
       _.times(price, function() { boldedDollarSigns += "$"; });
 
       var priceHtml = (
-        <div className="price">
+        <div className="price" aria-label={ price + " dollar signs" }>
           <span><b>{ boldedDollarSigns }</b></span>
         </div>
       );

@@ -68,6 +68,7 @@ define([
       return (
         <div className="restaurants-list-filters">
           <div className="container">
+            <h4>Restaurant Filters</h4>
             <div className="row">
               <div className="filters">
                 <div className="restaurant-filter col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-0">
@@ -77,6 +78,7 @@ define([
                         <input type="checkbox"
                                name="price"
                                value="1"
+                               aria-label="1 dollar signs filter"
                                checked={ this.state.filters.price.includes("1") }
                                onClick={ this._onPriceChange } />$
                       </label>
@@ -86,6 +88,7 @@ define([
                         <input type="checkbox"
                                name="price"
                                value="2"
+                               aria-label="2 dollar signs filter"
                                checked={ this.state.filters.price.includes("2") }
                                onClick={ this._onPriceChange } />$$
                       </label>
@@ -95,6 +98,7 @@ define([
                         <input type="checkbox"
                                name="price"
                                value="3"
+                               aria-label="3 dollar signs filter"
                                checked={ this.state.filters.price.includes("3") }
                                onClick={ this._onPriceChange } />$$$
                       </label>
@@ -104,6 +108,7 @@ define([
                         <input type="checkbox"
                                name="price"
                                value="4"
+                               aria-label="4 dollar signs filter"
                                checked={ this.state.filters.price.includes("4") }
                                onClick={ this._onPriceChange } />$$$$
                       </label>
