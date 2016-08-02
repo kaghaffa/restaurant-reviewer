@@ -1,3 +1,4 @@
+optimize: uglify2
 paths:
   'react'             : 'react/react-with-addons'
   'react-dom'         : 'react/react-dom'
