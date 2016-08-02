@@ -26,7 +26,6 @@ App::Application.configure do
   if defined? Uglifier
     config.assets.js_compressor = Uglifier.new(
       :mangle    => true,
-      :toplevel  => false,
       :copyright => false,
       :beautify  => true,
       :beautify_options => {
