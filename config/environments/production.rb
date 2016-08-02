@@ -23,7 +23,17 @@ App::Application.configure do
   config.serve_static_assets = false
 
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor = :uglifier
+  if defined? Uglifier
+    config.assets.js_compressor = Uglifier.new(
+      :mangle    => true,
+      :toplevel  => false,
+      :copyright => false,
+      :beautify  => true,
+      :beautify_options => {
+        :indent_level => 0
+      }
+    )
+  end
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
