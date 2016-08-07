@@ -18,6 +18,8 @@ gem 'bitters'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
+gem 'rake', '=10.4.2'
+
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
@@ -50,7 +52,7 @@ gem 'rack-ssl-enforcer'
 # front-end
 gem 'react-rails', '~> 1.0.0'
 gem 'bower-rails', '~> 0.9.2'
-gem 'requirejs-rails', '~> 0.9.1'
+gem 'requirejs-rails', '~> 0.9.8'
 
 group :development, :test do
   gem 'database_cleaner'
