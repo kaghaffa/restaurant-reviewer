@@ -1,6 +1,14 @@
 define([], function() {
   return {
 
+    roundedStarsLabel: function(stars) {
+      if (this.isNumeric(stars)) {
+        return (Math.round(stars * 10) / 10) + " Stars";
+      } else {
+        return "No star rating";
+      }
+    },
+
     starIcons: function(stars) {
       var starIcons = [];
       if (!this.isNumeric(stars)) {

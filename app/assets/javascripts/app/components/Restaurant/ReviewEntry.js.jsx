@@ -11,8 +11,6 @@ define([
     },
 
     render: function() {
-      var roundedStars = Math.round(this.props.review.stars * 10) / 10;
-
       return (
         <article className="review-entry">
           <div className="review-header">
@@ -34,7 +32,7 @@ define([
               </div>
 
               <div className="stars col-md-6 col-sm-6 col-xs-6">
-                <div className="stars" aria-label={ roundedStars + " Stars" }>
+                <div className="stars" aria-label={ this.props.review.stars + " Stars" }>
                   <span className="pull-right">
                     { Utils.starIcons(this.props.review.stars) }
                   </span>
