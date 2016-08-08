@@ -63,7 +63,7 @@ define([
 
       return (
         <div className="review-form panel panel-default">
-          <div className="panel-heading">Write a Review</div>
+          <div className="panel-heading"><h4>Write a Review</h4></div>
           <div className="panel-body">
             <form onSubmit={ this._submitReview }>
               { successAlert }

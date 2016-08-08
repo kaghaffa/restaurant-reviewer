@@ -68,7 +68,7 @@ define([
       return (
         <div className="restaurants-list-filters">
           <div className="container">
-            <h4>Restaurant Filters</h4>
+            <h3>Restaurant Filters</h3>
             <div className="row">
               <div className="filters">
                 <div className="restaurant-filter col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-0">
