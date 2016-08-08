@@ -12,13 +12,13 @@ define([
 
     getInitialState: function() {
       return {
-        restaurants: RestaurantStore.getRestaurants()
+        restaurants: RestaurantStore.getRestaurants({})
       };
     },
 
     componentDidMount: function() {
       RestaurantStore.addChangeListener(this._onRestaurantStoreChange);
-      RestaurantActions.getRestaurants();
+      RestaurantActions.getRestaurants({});
     },
 
     componentWillUnmount: function() {
@@ -27,7 +27,7 @@ define([
 
     _onRestaurantStoreChange: function() {
       this.setState({
-        restaurants: RestaurantStore.getRestaurants()
+        restaurants: RestaurantStore.getRestaurants({})
       });
     },
 

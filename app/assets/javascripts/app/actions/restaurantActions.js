@@ -8,8 +8,8 @@ define([
 
   return {
     // GET v1/restaurants
-    getRestaurants: function(filters = {}) {
-      var requestUrl = "/api/v1/restaurants"
+    getRestaurants: function(filters) {
+      var requestUrl = "/api/v1/restaurants";
 
       if (!_.isEmpty(filters)) {
         var params = RequestUtils.createQueryParams(filters);
