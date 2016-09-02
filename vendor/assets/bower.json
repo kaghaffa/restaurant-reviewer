@@ -6,7 +6,7 @@
     "react": "15.1.0",
     "flux": "2.1.1",
     "moment": "2.10.3",
-    "react-router": "https://npmcdn.com/react-router@2.4.1/umd/ReactRouter.js",
+    "react-router": "https://unpkg.com/react-router@2.4.1/umd/ReactRouter.js",
     "es6-promise": "2.0.1",
     "eventemitter2": "0.4.14",
     "requirejs-plugins": "1.0.3"
